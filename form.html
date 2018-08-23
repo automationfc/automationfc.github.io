@@ -1,0 +1,234 @@
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SELENIUM WEBDRIVER FORM DEMO</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+		<style>
+	table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.figure {
+  float: left;
+  padding-right: 20px;
+}
+
+.figcaption {
+  display: none;
+}
+
+.figure:hover .figcaption {
+  display: block;
+}
+
+img {
+    width: 120px;
+    height: 90px;
+  }
+</style>
+    </head>
+    <body>
+     <form action="#" method="post">
+        <h1>SELENIUM WEBDRIVER FORM DEMO</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Your basic info</legend>         
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email">
+
+		  <label for="password">Password:</label>
+          <input disabled="disabled" placeholder="Textbox is disabled" type="password" id="password" name="user_pass">
+
+          <label>Age:</label>
+          <input type="radio" id="under_18" value="under_18" name="user_age"><label for="under_18" class="light">Under 18</label><br>
+          <input type="radio" id="over_18" value="over_18" name="user_age"><label for="over_18" class="light">18 or older</label><br>
+		  <input disabled="disabled" type="radio" id="radio-disabled" value="radio-disabled" name="user_age"><label for="radio-disabled" class="light">Radiobutton is disabled</label>
+        </fieldset>
+        
+        <fieldset>
+          <legend><span class="number">2</span>Your profile</legend>
+          <label for="edu">Education:</label>
+          <textarea id="edu" name="user_edu"></textarea>
+		  <label for="bio">Biography:</label>
+          <textarea disabled="disabled" placeholder="TextArea is disabled" id="bio" name="user_bio"></textarea>
+      
+        <label for="job1">Job Role 01:</label>
+        <select id="job1" name="user_job1">
+            <option value="automation">Automation Tester</option>
+            <option value="manual">Manual Tester</option>
+            <option value="website">Website Tester</option>
+            <option value="mobile">Mobile Tester</option>
+            <option disabled="disabled" value="disabled">Dropdown disable</option>
+        </select>
+
+		<label for="job2">Job Role 02:</label>
+        <select disabled="disabled" id="job2" name="user_job2">
+		 <option value="dropdown-disabled">Dropdown is disabled</option>
+        </select>
+		        
+          <label>Interests:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
+          <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
+          <input disabled="disabled" type="checkbox" id="check-disbaled" value="check-disbaled" name="user_interest"><label class="light" for="check-disbaled">Checkbox is disabled</label><br>
+          <br />
+		<label for="slider-1">Slider 01:</label>
+		<input name="slider-1" id="slider-1" data-highlight="true" min="0" max="100" value="50" type="range">
+
+		 <label for="slider-2">Slider 02 (Disabled):</label>
+		 <input name="slider-2" id="slider-2" disabled="disabled" min="0" max="100" value="50" type="range">
+  </fieldset>          
+<fieldset>
+		 <button id="button-disabled" disabled="disabled" type="button-disabled">Button is disabled</button><br>
+		 <button id="button-enabled" type="submit">Button is enabled</button>
+	</fieldset>
+
+	<fieldset>
+	 <legend><span class="number">3</span>Table</legend>
+	<table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke" style="width:100%">
+     <thead>
+       <tr>
+         <th data-priority="1">Number</th>
+         <th data-priority="2">Article title</th>
+         <th data-priority="3">Date created</th>
+         <th data-priority="4">Rating</th>
+         <th data-priority="5">Reviews</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <th>1</th>
+         <td><a href="https://daominhdam.wordpress.com/2015/12/13/java-webdriver-08-kiem-tra-phan-tu-ton-tai-tren-page/" data-rel="external">Element is display</a></td>
+         <td>2013</td>
+         <td>100%</td>
+         <td>74</td>
+       </tr>
+       <tr>
+         <th>2</th>
+         <td><a href="https://daominhdam.wordpress.com/2015/12/13/java-webdriver-09-kiem-tra-phan-tu-bi-disable-enable/" data-rel="external">Element is disable</a></td>
+         <td>2014</td>
+         <td>97%</td>
+         <td>64</td>
+       </tr>
+       <tr>
+         <th>3</th>
+         <td><a href="https://daominhdam.wordpress.com/2015/12/13/java-webdriver-10-kiem-tra-phan-tu-da-duoc-chon/" data-rel="external">Element is select</a></td>
+         <td>2015</td>
+         <td>97%</td>
+         <td>87</td>
+       </tr>
+     </tbody>
+   </table>
+	</fieldset>
+
+	<fieldset>
+          <legend><span class="number">4</span>Window</legend>
+<label for="open window">Opening a new window:</label>
+  <a href='http://google.com.vn', target='_blank'>Click Here</a>
+	</fieldset>
+	<fieldset>
+          <legend><span class="number">5</span>File</legend>
+          <label for="download file">Download file:</label>
+          <a href="http://the-internet.herokuapp.com/download/some-file.txt">download.txt</a>
+          </br>
+	</fieldset>
+
+	<fieldset>
+          <legend><span class="number">6</span>Hover</legend>
+          <label for="hover">Hover over the image for additional information</label>
+          <div class="figure">
+    <img src="http://the-internet.herokuapp.com/img/avatar-blank.jpg" alt="User Avatar">
+    <div class="figcaption">
+      <h5>Name: User1</h5>
+      <a href="http://daominhdam.890m.com/#">View profile</a>
+    </div>
+  </div>
+  
+  <div class="figure">
+    <img src="http://the-internet.herokuapp.com/img/avatar-blank.jpg" alt="User Avatar">
+    <div class="figcaption">
+      <h5>Name: User2</h5>
+      <a href="http://daominhdam.890m.com/#">View profile</a>
+    </div>
+  </div>
+  
+  <div class="figure">
+    <img src="http://the-internet.herokuapp.com/img/avatar-blank.jpg" alt="User Avatar">
+    <div class="figcaption">
+      <h5>Name: User3</h5>
+      <a href="http://daominhdam.890m.com/#">View profile</a>
+    </div>
+  </div>
+
+<div class="figure">
+    <img src="http://the-internet.herokuapp.com/img/avatar-blank.jpg" alt="User Avatar">
+    <div class="figcaption">
+      <h5>Name: User4</h5>
+      <a href="http://daominhdam.890m.com/#">View profile</a>
+    </div>
+  </div>
+	</fieldset>
+
+<fieldset>
+          <legend><span class="number">7</span>Broken Images</legend>
+          <img src="asdf.jpg" />
+          <img src="hjkl.jpg" />
+          <img src="gkjh.jpg" />
+          <img src="http://the-internet.herokuapp.com/img/avatar-blank.jpg" />
+	</fieldset>
+	</form>
+<fieldset>
+ <legend><span class="number">8</span>JavaScript Alerts</legend>
+<div id="content" class="large-12 columns">
+        <script>
+  function jsAlert() {
+    alert('I am a JS Alert');
+    log('You clicked an alert successfully ');
+  }
+
+  function jsConfirm() {
+    var c = confirm('I am a JS Confirm');
+    var result = c === true ? 'Ok' : 'Cancel';
+    log('You clicked: ' + result);
+  }
+
+  function jsPrompt() {
+    var p = prompt('I am a JS prompt');
+    log('You entered: ' + p);
+  }
+
+$( document ).tooltip();
+
+  function log(msg) {
+    var result = document.getElementById('result');
+    result.innerHTML = msg;
+  }
+</script>
+<div class='example'>
+  <p>Here are some examples of different JavaScript alerts which can be troublesome for automation</p>
+  <ul style='list-style-type: none;'>
+    <li><button onclick="jsAlert()">Click for JS Alert</button></li>
+    <li><button onclick="jsConfirm()">Click for JS Confirm</button></li>
+    <li><button onclick="jsPrompt()">Click for JS Prompt</button></li>
+  </ul>
+  <h4>Result:</h4>
+  <p id='result' style='color:green'></p>
+</div>
+	</fieldset>
+<fieldset>
+ <div class="container">
+  <legend><span class="number">9</span>Tooltips</legend>
+<a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+</div>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+</fieldset>
+    </body>
+</html>			
