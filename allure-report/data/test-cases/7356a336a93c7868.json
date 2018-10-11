@@ -1,0 +1,66 @@
+{
+  "uid" : "7356a336a93c7868",
+  "name" : "simpleTestWithAttachments",
+  "fullName" : "my.company.SimpleTest.simpleTestWithAttachments",
+  "historyId" : "beaf89ad4b247dc55e460c7710aeb68c",
+  "time" : {
+    "start" : 1539225372493,
+    "stop" : 1539225372494,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "statusDetails" : {
+      "flaky" : false
+    },
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e7d0eeb6b5960551",
+      "name" : "makeAttach",
+      "source" : "e7d0eeb6b5960551.txt",
+      "type" : "text/plain",
+      "size" : 12
+    } ],
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "my.company.SimpleTest"
+  }, {
+    "name" : "testClass",
+    "value" : "my.company.SimpleTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "simpleTestWithAttachments"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "my.company.SimpleTest"
+  }, {
+    "name" : "host",
+    "value" : "dn-aavn-ws-643"
+  }, {
+    "name" : "thread",
+    "value" : "1108@dn-aavn-ws-643.main(1)"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "statistic" : {
+    "failed" : 5,
+    "broken" : 0,
+    "skipped" : 1,
+    "passed" : 7,
+    "unknown" : 0,
+    "total" : 13
+  },
+  "time" : {
+    "minDuration" : 0,
+    "maxDuration" : 16,
+    "sumDuration" : 56,
+    "start" : 1539225372320,
+    "stop" : 1539225372524,
+    "duration" : 204
+  },
+  "children" : [ {
+    "uid" : "22b03fb3f29924b9",
+    "name" : "Surefire suite",
+    "time" : {
+      "minDuration" : 0,
+      "maxDuration" : 16,
+      "sumDuration" : 56,
+      "start" : 1539225372320,
+      "stop" : 1539225372524,
+      "duration" : 204
+    },
+    "statistic" : {
+      "failed" : 5,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 13
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "92212045ea491b9d",
+      "name" : "Surefire test",
+      "time" : {
+        "minDuration" : 0,
+        "maxDuration" : 16,
+        "sumDuration" : 56,
+        "start" : 1539225372320,
+        "stop" : 1539225372524,
+        "duration" : 204
+      },
+      "statistic" : {
+        "failed" : 5,
+        "broken" : 0,
+        "skipped" : 1,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 13
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "8081017a5a346325",
+        "name" : "my.company.SimpleTest",
+        "time" : {
+          "minDuration" : 0,
+          "maxDuration" : 16,
+          "sumDuration" : 56,
+          "start" : 1539225372320,
+          "stop" : 1539225372524,
+          "duration" : 204
+        },
+        "statistic" : {
+          "failed" : 5,
+          "broken" : 0,
+          "skipped" : 1,
+          "passed" : 7,
+          "unknown" : 0,
+          "total" : 13
+        },
+        "type" : "TestGroupNode",
+        "children" : [ {
+          "uid" : "7356a336a93c7868",
+          "name" : "simpleTestWithAttachments",
+          "time" : {
+            "start" : 1539225372493,
+            "stop" : 1539225372494,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "32a42a3984620b41",
+          "name" : "parametrizedTest",
+          "time" : {
+            "start" : 1539225372473,
+            "stop" : 1539225372473,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "d722dac991905743",
+          "name" : "parametrizedTest",
+          "time" : {
+            "start" : 1539225372486,
+            "stop" : 1539225372486,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "ee9ababe7743b5d7",
+          "name" : "parametrizedTest",
+          "time" : {
+            "start" : 1539225372482,
+            "stop" : 1539225372483,
+            "duration" : 1
+          },
+          "status" : "failed",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "8aba7a1fda5a52b6",
+          "name" : "parametrizedTest",
+          "time" : {
+            "start" : 1539225372490,
+            "stop" : 1539225372490,
+            "duration" : 0
+          },
+          "status" : "failed",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "69a477c0355ecaea",
+          "name" : "simpleTestWithSteps",
+          "time" : {
+            "start" : 1539225372496,
+            "stop" : 1539225372506,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "ffb7f1c4b7231c94",
+          "name" : "parametrizedTest",
+          "time" : {
+            "start" : 1539225372466,
+            "stop" : 1539225372468,
+            "duration" : 2
+          },
+          "status" : "failed",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "67f6d66e3e8f1399",
+          "name" : "svgAttachmentTest",
+          "time" : {
+            "start" : 1539225372514,
+            "stop" : 1539225372520,
+            "duration" : 6
+          },
+          "status" : "passed",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "77a9120e5f2cf9d",
+          "name" : "parametrizedTest",
+          "time" : {
+            "start" : 1539225372477,
+            "stop" : 1539225372478,
+            "duration" : 1
+          },
+          "status" : "failed",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "9290882adf78f46b",
+          "name" : "failedTest",
+          "time" : {
+            "start" : 1539225372320,
+            "stop" : 1539225372336,
+            "duration" : 16
+          },
+          "status" : "failed",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "bfe9d9f5240f72fb",
+          "name" : "CSV аттачмент",
+          "time" : {
+            "start" : 1539225372445,
+            "stop" : 1539225372456,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "4629a6065c6f6499",
+          "name" : "simpleTest",
+          "time" : {
+            "start" : 1539225372429,
+            "stop" : 1539225372437,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        }, {
+          "uid" : "7cec2256d1c958a",
+          "name" : "skippedByDependencyTest",
+          "time" : {
+            "start" : 1539225372524,
+            "stop" : 1539225372524,
+            "duration" : 0
+          },
+          "status" : "skipped",
+          "flaky" : false,
+          "type" : "TestCaseNode"
+        } ]
+      } ]
+    } ]
+  } ]
+}

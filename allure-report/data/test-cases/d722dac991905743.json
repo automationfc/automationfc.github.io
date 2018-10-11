@@ -1,0 +1,74 @@
+{
+  "uid" : "d722dac991905743",
+  "name" : "parametrizedTest",
+  "fullName" : "my.company.SimpleTest.parametrizedTest",
+  "historyId" : "eb94b24335085f27a70805d55bcee722",
+  "time" : {
+    "start" : 1539225372486,
+    "stop" : 1539225372486,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "my.company.SimpleTest"
+  }, {
+    "name" : "testClass",
+    "value" : "my.company.SimpleTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "parametrizedTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "my.company.SimpleTest"
+  }, {
+    "name" : "host",
+    "value" : "dn-aavn-ws-643"
+  }, {
+    "name" : "thread",
+    "value" : "1108@dn-aavn-ws-643.main(1)"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "Even longer parameter value than long-long parameter value"
+  }, {
+    "name" : "arg1",
+    "value" : "2"
+  }, {
+    "name" : "arg2",
+    "value" : "3"
+  } ],
+  "links" : [ {
+    "name" : "ALR-123",
+    "url" : "https://example.org/issue/ALR-123",
+    "type" : "issue"
+  }, {
+    "name" : "ALR-456",
+    "url" : "https://example.org/issue/ALR-456",
+    "type" : "issue"
+  }, {
+    "name" : "ALR-789",
+    "url" : "https://example.org/issue/ALR-789",
+    "type" : "issue"
+  }, {
+    "name" : "TMS-123",
+    "url" : "https://example.org/tms/TMS-123",
+    "type" : "tms"
+  } ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "uid" : "bfe9d9f5240f72fb",
+  "name" : "CSV аттачмент",
+  "fullName" : "my.company.SimpleTest.csvAttachmentTest",
+  "historyId" : "fe8e95540adf530476eae9664788ffe2",
+  "time" : {
+    "start" : 1539225372445,
+    "stop" : 1539225372456,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "statusDetails" : {
+      "flaky" : false
+    },
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "236306c2414bba8c",
+      "name" : "Sample csv attachment",
+      "source" : "236306c2414bba8c.txt",
+      "type" : "text/csv",
+      "size" : 164
+    } ],
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "my.company.SimpleTest"
+  }, {
+    "name" : "testClass",
+    "value" : "my.company.SimpleTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "csvAttachmentTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "my.company.SimpleTest"
+  }, {
+    "name" : "host",
+    "value" : "dn-aavn-ws-643"
+  }, {
+    "name" : "thread",
+    "value" : "1108@dn-aavn-ws-643.main(1)"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

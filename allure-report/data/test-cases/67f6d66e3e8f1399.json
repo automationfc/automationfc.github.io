@@ -1,0 +1,66 @@
+{
+  "uid" : "67f6d66e3e8f1399",
+  "name" : "svgAttachmentTest",
+  "fullName" : "my.company.SimpleTest.svgAttachmentTest",
+  "historyId" : "305458e21d8b6f085a3cac144d2dd814",
+  "time" : {
+    "start" : 1539225372514,
+    "stop" : 1539225372520,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "statusDetails" : {
+      "flaky" : false
+    },
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d8757306eac50d13",
+      "name" : "Sample svg attachment",
+      "source" : "d8757306eac50d13.svg",
+      "type" : "image/svg+xml",
+      "size" : 1000
+    } ],
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "my.company.SimpleTest"
+  }, {
+    "name" : "testClass",
+    "value" : "my.company.SimpleTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "svgAttachmentTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "my.company.SimpleTest"
+  }, {
+    "name" : "host",
+    "value" : "dn-aavn-ws-643"
+  }, {
+    "name" : "thread",
+    "value" : "1108@dn-aavn-ws-643.main(1)"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}
