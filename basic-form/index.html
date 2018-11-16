@@ -38,7 +38,17 @@
 
 <body>
   <form action="#" method="post">
-    <h1>SELENIUM WEBDRIVER FORM DEMO</h1>
+    <h1>SELENIUM WEBDRIVER API</h1>
+    <fieldset>
+      <legend>
+        <span class="number">0</span>Xpath Tip</legend>
+      <h3 id="nested">
+        Hello World!
+        <span> (Ignore Me) </span>
+        <span class="date"> @04:45 PM </span>
+      </h3>
+
+    </fieldset>
 
     <fieldset>
       <legend>
@@ -108,7 +118,8 @@
     <fieldset>
       <legend>
         <span class="number">3</span>Table</legend>
-      <table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke" style="width:100%">
+      <table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke"
+        style="width:100%">
         <thead>
           <tr>
             <th data-priority="1">Number</th>
@@ -122,7 +133,8 @@
           <tr>
             <th>1</th>
             <td>
-              <a href="https://automationfc.com/2015/12/13/java-webdriver-08-kiem-tra-phan-tu-ton-tai-tren-page/" data-rel="external">Element is display</a>
+              <a href="https://automationfc.com/2015/12/13/java-webdriver-08-kiem-tra-phan-tu-ton-tai-tren-page/"
+                data-rel="external">Element is display</a>
             </td>
             <td>2013</td>
             <td>100%</td>
@@ -131,7 +143,8 @@
           <tr>
             <th>2</th>
             <td>
-              <a href="https://automationfc.com/2015/12/13/java-webdriver-09-kiem-tra-phan-tu-bi-disable-enable/" data-rel="external">Element is disable</a>
+              <a href="https://automationfc.com/2015/12/13/java-webdriver-09-kiem-tra-phan-tu-bi-disable-enable/"
+                data-rel="external">Element is disable</a>
             </td>
             <td>2014</td>
             <td>97%</td>
@@ -140,7 +153,8 @@
           <tr>
             <th>3</th>
             <td>
-              <a href="https://automationfc.com/2015/12/13/java-webdriver-10-kiem-tra-phan-tu-da-duoc-chon/" data-rel="external">Element is select</a>
+              <a href="https://automationfc.com/2015/12/13/java-webdriver-10-kiem-tra-phan-tu-da-duoc-chon/" data-rel="external">Element
+                is select</a>
             </td>
             <td>2015</td>
             <td>97%</td>
@@ -209,64 +223,73 @@
       <img src="gkjh.jpg" />
       <img src="http://the-internet.herokuapp.com/img/avatar-blank.jpg" />
     </fieldset>
-  </form>
-  <fieldset>
-    <legend>
-      <span class="number">8</span>JavaScript Alerts</legend>
-    <div id="content" class="large-12 columns">
-      <script>
-        function jsAlert() {
-          alert('I am a JS Alert');
-          log('You clicked an alert successfully ');
-        }
 
-        function jsConfirm() {
-          var c = confirm('I am a JS Confirm');
-          var result = c === true ? 'Ok' : 'Cancel';
-          log('You clicked: ' + result);
-        }
-
-        function jsPrompt() {
-          var p = prompt('I am a JS prompt');
-          log('You entered: ' + p);
-        }
-
-        $(document).tooltip();
-
-        function log(msg) {
-          var result = document.getElementById('result');
-          result.innerHTML = msg;
-        }
-      </script>
-      <div class='example'>
-        <p>Here are some examples of different JavaScript alerts which can be troublesome for automation</p>
-        <ul style='list-style-type: none;'>
-          <li>
-            <button onclick="jsAlert()">Click for JS Alert</button>
-          </li>
-          <li>
-            <button onclick="jsConfirm()">Click for JS Confirm</button>
-          </li>
-          <li>
-            <button onclick="jsPrompt()">Click for JS Prompt</button>
-          </li>
-        </ul>
-        <h4>Result:</h4>
-        <p id='result' style='color:green'></p>
-      </div>
-  </fieldset>
-  <fieldset>
-    <div class="container">
+    <fieldset>
       <legend>
-        <span class="number">9</span>Tooltips</legend>
-      <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+        <span class="number">8</span>JavaScript Alerts</legend>
+      <div id="content" class="large-12 columns">
+        <script>
+          function jsAlert() {
+            alert('I am a JS Alert');
+            log('You clicked an alert successfully ');
+          }
+
+          function jsConfirm() {
+            var c = confirm('I am a JS Confirm');
+            var result = c === true ? 'Ok' : 'Cancel';
+            log('You clicked: ' + result);
+          }
+
+          function jsPrompt() {
+            var p = prompt('I am a JS prompt');
+            log('You entered: ' + p);
+          }
+
+          $(document).tooltip();
+
+          function log(msg) {
+            var result = document.getElementById('result');
+            result.innerHTML = msg;
+          }
+        </script>
+        <div class='example'>
+          <p>Here are some examples of different JavaScript alerts which can be troublesome for automation</p>
+          <ul style='list-style-type: none;'>
+            <li>
+              <button onclick="jsAlert()">Click for JS Alert</button>
+            </li>
+            <li>
+              <button onclick="jsConfirm()">Click for JS Confirm</button>
+            </li>
+            <li>
+              <button onclick="jsPrompt()">Click for JS Prompt</button>
+            </li>
+          </ul>
+          <h4>Result:</h4>
+          <p id='result' style='color:green'></p>
+        </div>
+    </fieldset>
+    <fieldset>
+      <div class="container">
+        <legend>
+          <span class="number">9</span>Tooltips</legend>
+        <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+      </div>
+      <script>
+        $(document).ready(function () {
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+      </script>
+    </fieldset>
+  </form>
+
+  <div id='page-footer' class="row">
+    <div class="large-4 large-centered columns">
+      <hr>
+      <div style="text-align: center;">Copyright by <a target="_blank" href="http://automationfc.com/">Dam Dao -
+          AutomationFC</a></div>
     </div>
-    <script>
-      $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-    </script>
-  </fieldset>
+  </div>
 </body>
 
 </html>
