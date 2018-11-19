@@ -175,7 +175,6 @@
         <span class="number">5</span>File</legend>
       <label for="download file">Download file:</label>
       <a href="http://the-internet.herokuapp.com/download/some-file.txt">download.txt</a>
-      </br>
     </fieldset>
 
     <fieldset>
@@ -223,56 +222,10 @@
       <img src="gkjh.jpg" />
       <img src="http://the-internet.herokuapp.com/img/avatar-blank.jpg" />
     </fieldset>
-
-    <fieldset>
-      <legend>
-        <span class="number">8</span>JavaScript Alerts</legend>
-      <div id="content" class="large-12 columns">
-        <script>
-          function jsAlert() {
-            alert('I am a JS Alert');
-            log('You clicked an alert successfully ');
-          }
-
-          function jsConfirm() {
-            var c = confirm('I am a JS Confirm');
-            var result = c === true ? 'Ok' : 'Cancel';
-            log('You clicked: ' + result);
-          }
-
-          function jsPrompt() {
-            var p = prompt('I am a JS prompt');
-            log('You entered: ' + p);
-          }
-
-          $(document).tooltip();
-
-          function log(msg) {
-            var result = document.getElementById('result');
-            result.innerHTML = msg;
-          }
-        </script>
-        <div class='example'>
-          <p>Here are some examples of different JavaScript alerts which can be troublesome for automation</p>
-          <ul style='list-style-type: none;'>
-            <li>
-              <button onclick="jsAlert()">Click for JS Alert</button>
-            </li>
-            <li>
-              <button onclick="jsConfirm()">Click for JS Confirm</button>
-            </li>
-            <li>
-              <button onclick="jsPrompt()">Click for JS Prompt</button>
-            </li>
-          </ul>
-          <h4>Result:</h4>
-          <p id='result' style='color:green'></p>
-        </div>
-    </fieldset>
     <fieldset>
       <div class="container">
         <legend>
-          <span class="number">9</span>Tooltips</legend>
+          <span class="number">8</span>Tooltips</legend>
         <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
       </div>
       <script>
@@ -282,6 +235,52 @@
       </script>
     </fieldset>
   </form>
+
+  <fieldset>
+    <legend>
+      <span class="number">9</span>JavaScript Alerts</legend>
+    <div id="content" class="large-12 columns">
+      <script>
+        function jsAlert() {
+          alert('I am a JS Alert');
+          log('You clicked an alert successfully ');
+        }
+
+        function jsConfirm() {
+          var c = confirm('I am a JS Confirm');
+          var result = c === true ? 'Ok' : 'Cancel';
+          log('You clicked: ' + result);
+        }
+
+        function jsPrompt() {
+          var p = prompt('I am a JS prompt');
+          log('You entered: ' + p);
+        }
+
+        $(document).tooltip();
+
+        function log(msg) {
+          var result = document.getElementById('result');
+          result.innerHTML = msg;
+        }
+      </script>
+      <div class='example'>
+        <p>Here are some examples of different JavaScript alerts which can be troublesome for automation</p>
+        <ul style='list-style-type: none;'>
+          <li>
+            <button onclick="jsAlert()">Click for JS Alert</button>
+          </li>
+          <li>
+            <button onclick="jsConfirm()">Click for JS Confirm</button>
+          </li>
+          <li>
+            <button onclick="jsPrompt()">Click for JS Prompt</button>
+          </li>
+        </ul>
+        <h4>Result:</h4>
+        <p id='result' style='color:green'></p>
+      </div>
+  </fieldset>
 
   <div id='page-footer' class="row">
     <div class="large-4 large-centered columns">
