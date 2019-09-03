@@ -37,7 +37,7 @@
 </head>
 
 <body>
-  <form action="#" method="post">
+  <form>
     <h1>SELENIUM WEBDRIVER API</h1>
     <fieldset>
       <legend>
@@ -49,9 +49,9 @@
       </h3>
 
       <h2>
-      <span class='singer'></span>
-      
-            Michael Jackson
+        <span class='singer'></span>
+
+        Michael Jackson
 
       </h2>
 
@@ -74,7 +74,7 @@
       <label for="over_18" class="light">18 or older</label>
       <br>
       <input disabled="disabled" type="radio" id="radio-disabled" value="radio-disabled" name="user_age">
-      <label for="radio-disabled" class="light">Radiobutton is disabled</label>
+      <label for="radio-disabled" class="light">Radio button is disabled</label>
     </fieldset>
 
     <fieldset>
@@ -137,9 +137,9 @@
       <input name="slider-2" id="slider-2" disabled="disabled" min="0" max="100" value="50" type="range">
     </fieldset>
     <fieldset>
-      <button id="button-disabled" disabled="disabled" type="button-disabled">Button is disabled</button>
+      <button id="button-disabled" disabled="disabled">Button is disabled</button>
       <br>
-      <button id="button-enabled" type="submit">Button is enabled</button>
+      <button id="button-enabled" onclick="window.location.href='automationfc.com'">Button is enabled</button>
     </fieldset>
 
     <fieldset>
@@ -289,11 +289,26 @@
         });
       </script>
     </fieldset>
+    <fieldset>
+      <div class="container">
+        <legend>
+          <span class="number">9</span>Double Click</legend>
+      </div>
+    </fieldset>
+    <fieldset>
+      <button ondblclick="doubleClickMe()">Double click me</button>
+      <p id="demo"></p>
+      <script>
+        function doubleClickMe() {
+          document.getElementById("demo").innerHTML = "Hello Automation FC!";
+        }
+      </script>
+    </fieldset>
   </form>
 
   <fieldset>
     <legend>
-      <span class="number">9</span>JavaScript Alerts</legend>
+      <span class="number">10</span>JavaScript Alerts</legend>
     <div id="content" class="large-12 columns">
       <script>
         function jsAlert() {
