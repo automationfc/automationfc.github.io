@@ -37,11 +37,11 @@
 </head>
 
 <body>
-  <form>
-    <h1>SELENIUM WEBDRIVER API</h1>
-    <fieldset>
-      <legend>
-        <span class="number">0</span>Xpath Tip</legend>
+  <h1>SELENIUM WEBDRIVER API</h1>
+  <fieldset>
+    <div class="container">
+        <legend>
+            <span class="number">0</span>XPath Tip (Text vs String)</legend>
       <h3 id="nested">
         Hello World!
         <span> (Ignore Me) </span>
@@ -54,10 +54,11 @@
         Michael Jackson
 
       </h2>
+    </div>
+  </fieldset>
 
-    </fieldset>
-
-    <fieldset>
+  <fieldset>
+    <div class="container">
       <legend>
         <span class="number">1</span>Your basic info</legend>
       <label for="mail">Email:</label>
@@ -75,9 +76,11 @@
       <br>
       <input disabled="disabled" type="radio" id="radio-disabled" value="radio-disabled" name="user_age">
       <label for="radio-disabled" class="light">Radio button is disabled</label>
-    </fieldset>
+    </div>
+  </fieldset>
 
-    <fieldset>
+  <fieldset>
+    <div class="container">
       <legend>
         <span class="number">2</span>Your profile</legend>
       <label for="edu">Education:</label>
@@ -135,14 +138,18 @@
 
       <label for="slider-2">Slider 02 (Disabled):</label>
       <input name="slider-2" id="slider-2" disabled="disabled" min="0" max="100" value="50" type="range">
-    </fieldset>
-    <fieldset>
+    </div>
+  </fieldset>
+  <fieldset>
+    <div class="container">
       <button id="button-disabled" disabled="disabled">Button is disabled</button>
       <br>
-      <button id="button-enabled" onclick="window.location.href='automationfc.com'">Button is enabled</button>
-    </fieldset>
+      <button id="button-enabled" onclick="window.location.href='http://automationfc.com'">Button is enabled</button>
+    </div>
+  </fieldset>
 
-    <fieldset>
+  <fieldset>
+    <div class="container">
       <legend>
         <span class="number">3</span>Table</legend>
       <table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke"
@@ -190,9 +197,11 @@
           </tr>
         </tbody>
       </table>
-    </fieldset>
+    </div>
+  </fieldset>
 
-    <fieldset>
+  <fieldset>
+    <div class="container">
       <legend>
         <span class="number">4</span>Window</legend>
       <label for="open window">Opening a new window:</label>
@@ -204,15 +213,19 @@
       </br>
       <a href='https://lazada.vn' , target='_blank'>LAZADA</a>
       </br>
-    </fieldset>
-    <fieldset>
+    </div>
+  </fieldset>
+  <fieldset>
+    <div class="container">
       <legend>
         <span class="number">5</span>File</legend>
       <label for="download file">Download file:</label>
       <a href="http://the-internet.herokuapp.com/download/some-file.txt">download.txt</a>
-    </fieldset>
+    </div>
+  </fieldset>
 
-    <fieldset>
+  <fieldset>
+    <div class="container">
       <legend>
         <span class="number">6</span>Hover</legend>
       <label for="hover">Hover over the image for additional information</label>
@@ -265,9 +278,11 @@
           <a href="http://daominhdam.github.io">View profile</a>
         </div>
       </div>
-    </fieldset>
+    </div>
+  </fieldset>
 
-    <fieldset>
+  <fieldset>
+    <div class="container">
       <legend>
         <span class="number">7</span>Broken Images</legend>
       <img src="asdf.jpg" />
@@ -276,79 +291,70 @@
       <img src="fjdg.jpg" />
       <img
         src="https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
-    </fieldset>
-    <fieldset>
-      <div class="container">
-        <legend>
-          <span class="number">8</span>Tooltips</legend>
-        <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
-      </div>
-      <script>
-        $(document).ready(function () {
-          $('[data-toggle="tooltip"]').tooltip();
-        });
-      </script>
-    </fieldset>
-    <fieldset>
-      <div class="container">
-        <legend>
-          <span class="number">9</span>Double Click</legend>
-      </div>
-    </fieldset>
-    <fieldset>
+    </div>
+  </fieldset>
+  <fieldset>
+    <div class="container">
+      <legend>
+        <span class="number">8</span>Tooltips</legend>
+      <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </fieldset>
+  <fieldset>
+    <div class="container">
+      <legend>
+        <span class="number">9</span>Double Click</legend>
       <button ondblclick="doubleClickMe()">Double click me</button>
       <p id="demo"></p>
       <script>
         function doubleClickMe() {
-          document.getElementById("demo").innerHTML = "Hello Automation FC!";
+          document.getElementById("demo").innerHTML = "Hello Automation Guys!";
         }
       </script>
-    </fieldset>
-  </form>
+    </div>
+  </fieldset>
 
   <fieldset>
-    <legend>
-      <span class="number">10</span>JavaScript Alerts</legend>
-    <div id="content" class="large-12 columns">
-      <script>
-        function jsAlert() {
-          alert('I am a JS Alert');
-          log('You clicked an alert successfully ');
-        }
+    <div class="container">
+      <legend>
+        <span class="number">10</span>JavaScript Alerts</legend>
+      <div id="content" class="large-12 columns">
+        <script>
+          function jsAlert() {
+            alert('I am a JS Alert');
+            log('You clicked an alert successfully ');
+          }
 
-        function jsConfirm() {
-          var c = confirm('I am a JS Confirm');
-          var result = c === true ? 'Ok' : 'Cancel';
-          log('You clicked: ' + result);
-        }
+          function jsConfirm() {
+            var c = confirm('I am a JS Confirm');
+            var result = c === true ? 'Ok' : 'Cancel';
+            log('You clicked: ' + result);
+          }
 
-        function jsPrompt() {
-          var p = prompt('I am a JS prompt');
-          log('You entered: ' + p);
-        }
+          function jsPrompt() {
+            var p = prompt('I am a JS prompt');
+            log('You entered: ' + p);
+          }
 
-        $(document).tooltip();
+          $(document).tooltip();
 
-        function log(msg) {
-          var result = document.getElementById('result');
-          result.innerHTML = msg;
-        }
-      </script>
-      <div class='example'>
-        <p>Here are some examples of different JavaScript alerts which can be troublesome for automation</p>
-        <ul style='list-style-type: none;'>
-          <li>
-            <button onclick="jsAlert()">Click for JS Alert</button>
-          </li>
-          <li>
-            <button onclick="jsConfirm()">Click for JS Confirm</button>
-          </li>
-          <li>
-            <button onclick="jsPrompt()">Click for JS Prompt</button>
-          </li>
-        </ul>
-        <h4>Result:</h4>
-        <p id='result' style='color:green'></p>
+          function log(msg) {
+            var result = document.getElementById('result');
+            result.innerHTML = msg;
+          }
+        </script>
+        <div class='example'>
+          <button onclick="jsAlert()">Click for JS Alert</button>
+          <button onclick="jsConfirm()">Click for JS Confirm</button>
+          <button onclick="jsPrompt()">Click for JS Prompt</button>
+          <h4>Result:</h4>
+          <p id='result' style='color:green'></p>
+        </div>
       </div>
   </fieldset>
 
