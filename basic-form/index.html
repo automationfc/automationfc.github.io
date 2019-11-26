@@ -141,7 +141,7 @@
       <label for="bio">Biography:</label>
       <textarea disabled="disabled" placeholder="TextArea is disabled" id="bio" name="user_bio"></textarea>
 
-      <label for="job1">Job Role 01:</label>
+      <label for="job1">Job Role 01 - Single Dropdown:</label>
       <select id="job1" name="user_job1">
         <option value="automation">Automation Testing</option>
         <option value="manual">Manual Testing</option>
@@ -155,8 +155,22 @@
         <option value="function">Functional UI Testing</option>
       </select>
 
-      <label for="job2">Job Role 02:</label>
-      <select disabled="disabled" id="job2" name="user_job2">
+      <label for="job2">Job Role 02 - Multiple Dropdown:</label>
+      <select id="job2" name="user_job2" multiple="multiple">
+        <option value="automation">Automation</option>
+        <option value="manual">Manual</option>
+        <option value="website">Adhoc</option>
+        <option value="mobile">Mobile</option>
+        <option value="desktop">Desktop</option>
+        <option value="security">Security</option>
+        <option value="perfomance">Perfomance</option>
+        <option value="intergration">Intergration</option>
+        <option value="unit">Unit</option>
+        <option value="function">Functional UI</option>
+      </select>
+
+      <label for="job3">Job Role 03 - Disable Dropdown:</label>
+      <select disabled="disabled" id="job3" name="user_job3">
         <option value="dropdown-disabled">Dropdown is disabled</option>
       </select>
 
