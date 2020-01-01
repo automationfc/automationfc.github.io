@@ -1,0 +1,57 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 VALIDATION</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body background="background.jpg">
+    <div class="container">
+        <h1>HTML5 VALIDATION</h1>
+        <form action="/" method="post" enctype="application/x-www-form-urlencoded">
+            <fieldset>
+                <ul>
+                    <li>
+                        <label for="fname">
+                            <b>✱ NAME</b>
+                        </label>
+                        <input type="name" name="fname" id="fname" required="">
+                    </li>
+                    <li>
+                        <label for="pass">
+                            <b>✱ PASSWORD</b>
+                        </label>
+                        <input type="password" name="pass" id="pass" required="">
+                    </li>
+                    <li>
+                        <label for="em">
+                            <b>✱ EMAIL </b>
+                        </label>
+                        <input type="email" name="em" id="em"
+                            pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+                            required="" />
+                    </li>
+                    <li>
+                        <label for="em">
+                            <b>✱ ADDRESS </b>
+                        </label>
+                        <select required="">
+                            <option value=""></option>
+                            <option value="hanoi">HA NOI</option>
+                            <option value="hochiminh">HO CHI MINH</option>
+                            <option value="danang">DA NANG</option>
+                            <option value="cantho">CAN THO</option>
+                            <option value="haiphong">HAI PHONG</option>
+                        </select>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <input href="https://automationfc.com/" type="submit" name="submit-btn" class="btn" value="SUBMIT">
+            <a href="https://automationfc.com"><b>Automation FC</b></a>
+        </form>
+    </div>
+
+</body>
+
+</html>
