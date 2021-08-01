@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<html>
+
+<head>
+    <script src="../dynamic-loading/js/298279967.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Dynamic loading to demo wait in Selenium</title>
+    <link href="../dynamic-loading/css/app.css" rel="stylesheet">
+    <link href="../dynamic-loading/css/font-awesome.css" rel="stylesheet">
+    <script src="../dynamic-loading/js/jquery-1.11.3.min.js"></script>
+    <script src="../dynamic-loading/js/jquery-ui.js"></script>
+    <script src="../dynamic-loading/js/foundation.js"></script>
+    <script src="../dynamic-loading/js/foundation.alerts.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</head>
+
+<body>
+    <div class="row">
+        <script>
+            $(function () {
+                $('#start button').click(function () {
+                    $('#start').hide();
+                    $('#start').before("<div id='loading'>Loading... <img src='../dynamic-loading/img/ajax-loader.gif'></div>");
+                    setTimeout(function () {
+                        $('#loading').hide();
+                        $('#loading').before("<div id='finish' style='display:none'><h4>Hello World!</h4></div>")
+                        $('#finish').show();
+                    }, 5000);
+                });
+            });
+        </script>
+
+        <div class='example'>
+            <h3>Dynamically Loaded Page Elements</h3>
+            </br>
+            <div id='start'>
+                <button>Start</button>
+            </div>
+            </br>
+        </div>
+
+    </div>
+</body>
+
+</html>
