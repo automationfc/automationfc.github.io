@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head><title>SVG Element</title></head>
+  <body>
+  <h1>SVG Element with Selenium</h1>
+
+    <svg width="150" height="150">
+       <circle cx="90" cy="90" r="45" stroke="blue" stroke-width="2" fill="yellow"></circle>
+    </svg> 
+    <br>
+
+    <svg width="400" height="180">
+      <rect x="50" y="20" width="150" height="150" style="fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" />
+    </svg>
+    <br>
+
+	<svg width="400" height="180">
+		<rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+		style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+	</svg>
+	<br>
+	<svg width="300" height="200">
+		<polygon points="100,10 40,198 190,78 10,78 160,198"
+		style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+	</svg>
+	<br>
+
+	<svg height="80" width="300">
+		<g fill="none">
+		  <path stroke="red" d="M5 20 l215 0" />
+		  <path stroke="black" d="M5 40 l215 0" />
+		  <path stroke="blue" d="M5 60 l215 0" />
+		</g>
+	</svg>
+	<br>
+    <svg viewBox="0 0 500 50">
+		<style>
+			.heavy {
+			  font: bold 30px;
+			}
+		  </style>
+		
+		<a xlink:href="https://automationfc.vn/" target="_blank">
+      		<text x="40" y="35" fill="blue" class="heavy">Automation FC - Viet Nam</text>
+		</a>
+		Sorry, your browser does not support inline SVG.
+    </svg> 
+
+	<svg viewBox="0 0 300 300">
+		<path id="MyPath" fill="none" stroke="red" d="M10,90 Q90,90 90,45 Q90,10 50,10 Q10,10 10,40 Q10,70 45,70 Q70,70 75,50" />  
+		<a xlink:href="https://automationfc.vn/khoa-hoc/fullstack-selenium-java" target="_blank">
+		<text fill="blue">
+		  <textPath href="#MyPath">Fullstack Selenium in Java</textPath>
+		</text>
+		</a>
+	  </svg>
+	
+  </body>
+</html>
